@@ -202,7 +202,7 @@ type LocalPackItem struct {
 	} `json:"links"`
 	Phone       string `json:"phone"`
 	Title       string `json:"title"`
-	Rating      int    `json:"rating"`
+	Rating      string `json:"rating"`
 	Address     string `json:"address"`
 	Subtitle    string `json:"subtitle"`
 	RatingCount int    `json:"rating_count"`
@@ -293,7 +293,7 @@ type RecipesItem struct {
 	Url      string `json:"url"`
 	Desc     string `json:"desc"`
 	Title    string `json:"title"`
-	Rating   int    `json:"rating"`
+	Rating   string `json:"rating"`
 	Source   string `json:"source"`
 	Duration string `json:"duration"`
 }
@@ -372,7 +372,7 @@ type LocalServiceAds struct {
 		Pos              int    `json:"pos"`
 		Url              string `json:"url"`
 		Title            string `json:"title"`
-		Rating           int    `json:"rating"`
+		Rating           string `json:"rating"`
 		ReviewsCount     int    `json:"reviews_count"`
 		GoogleGuaranteed bool   `json:"google_guaranteed"`
 	} `json:"items"`

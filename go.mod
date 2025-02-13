@@ -1,4 +1,4 @@
-module github.com/oxylabs/oxylabs-sdk-go
+module github.com/revvim/oxylabs-sdk-go
 
 go 1.21.0
 

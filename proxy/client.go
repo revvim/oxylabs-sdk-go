@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/oxylabs/oxylabs-sdk-go/internal"
+	"github.com/revvim/oxylabs-sdk-go/internal"
 )
 
 // Init initializes and returns an HTTP client configured with Oxylabs proxy settings.

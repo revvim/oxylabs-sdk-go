@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/oxylabs/oxylabs-sdk-go/internal"
-	"github.com/oxylabs/oxylabs-sdk-go/oxylabs"
+	"github.com/revvim/oxylabs-sdk-go/internal"
+	"github.com/revvim/oxylabs-sdk-go/oxylabs"
 )
 
 // ScrapeAmazonUrl scrapes amazon via Oxylabs E-Commerce API with amazon as source.

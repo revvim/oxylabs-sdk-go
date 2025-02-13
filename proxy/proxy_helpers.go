@@ -3,7 +3,7 @@ package proxy
 import (
 	"net/http"
 
-	"github.com/oxylabs/oxylabs-sdk-go/oxylabs"
+	"github.com/revvim/oxylabs-sdk-go/oxylabs"
 )
 
 // AddUserAgentHeader adds the user_agent_type header to the req.

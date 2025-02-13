@@ -40,13 +40,13 @@ type Content struct {
 }
 
 type Result struct {
-	Pla                        Pla                          `json:"pla"`
-	Paid                       []Paid                       `json:"paid"`
-	Images                     Image                        `json:"images"`
-	Organic                    []Organic                    `json:"organic"`
-	Twitter                    Twitter                      `json:"twitter"`
-	Knowledge                  Knowledge                    `json:"knowledge"`
-	LocalPack                  LocalPack                    `json:"local_pack"`
+	Pla       Pla       `json:"pla"`
+	Paid      []Paid    `json:"paid"`
+	Images    Image     `json:"images"`
+	Organic   []Organic `json:"organic"`
+	Twitter   Twitter   `json:"twitter"`
+	Knowledge Knowledge `json:"knowledge"`
+	//LocalPack                  LocalPack                    `json:"local_pack"`
 	TopStories                 TopStory                     `json:"top_stories"`
 	PopularProducts            []PopularProducts            `json:"popular_products"`
 	RelatedSearches            RelatedSearches              `json:"related_searches"`
@@ -200,12 +200,12 @@ type LocalPackItem struct {
 		Href  string `json:"href"`
 		Title string `json:"title"`
 	} `json:"links"`
-	Phone       string `json:"phone"`
-	Title       string `json:"title"`
-	Rating      string `json:"rating"`
-	Address     string `json:"address"`
-	Subtitle    string `json:"subtitle"`
-	RatingCount int    `json:"rating_count"`
+	Phone       string  `json:"phone"`
+	Title       string  `json:"title"`
+	Rating      float64 `json:"rating"`
+	Address     string  `json:"address"`
+	Subtitle    string  `json:"subtitle"`
+	RatingCount int     `json:"rating_count"`
 }
 
 type TopStory struct {
@@ -227,12 +227,12 @@ type PopularProducts struct {
 }
 
 type PopularProductsItem struct {
-	Pos       int    `json:"pos"`
-	Price     string `json:"price"`
-	Rating    string `json:"rating"`
-	Seller    string `json:"seller"`
-	Title     string `json:"title"`
-	ImageData string `json:"image_data"`
+	Pos       int     `json:"pos"`
+	Price     string  `json:"price"`
+	Rating    float64 `json:"rating"`
+	Seller    string  `json:"seller"`
+	Title     string  `json:"title"`
+	ImageData string  `json:"image_data"`
 }
 
 type RelatedSearches struct {
@@ -289,13 +289,13 @@ type Recipes struct {
 }
 
 type RecipesItem struct {
-	Pos      int    `json:"pos"`
-	Url      string `json:"url"`
-	Desc     string `json:"desc"`
-	Title    string `json:"title"`
-	Rating   string `json:"rating"`
-	Source   string `json:"source"`
-	Duration string `json:"duration"`
+	Pos      int     `json:"pos"`
+	Url      string  `json:"url"`
+	Desc     string  `json:"desc"`
+	Title    string  `json:"title"`
+	Rating   float64 `json:"rating"`
+	Source   string  `json:"source"`
+	Duration string  `json:"duration"`
 }
 
 type Videos struct {
@@ -369,12 +369,12 @@ type VideoBox struct {
 
 type LocalServiceAds struct {
 	Items []struct {
-		Pos              int    `json:"pos"`
-		Url              string `json:"url"`
-		Title            string `json:"title"`
-		Rating           string `json:"rating"`
-		ReviewsCount     int    `json:"reviews_count"`
-		GoogleGuaranteed bool   `json:"google_guaranteed"`
+		Pos              int     `json:"pos"`
+		Url              string  `json:"url"`
+		Title            string  `json:"title"`
+		Rating           float64 `json:"rating"`
+		ReviewsCount     int     `json:"reviews_count"`
+		GoogleGuaranteed bool    `json:"google_guaranteed"`
 	} `json:"items"`
 	PosOverall int `json:"pos_overall"`
 }

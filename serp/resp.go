@@ -227,12 +227,12 @@ type PopularProducts struct {
 }
 
 type PopularProductsItem struct {
-	Pos       int     `json:"pos"`
-	Price     string  `json:"price"`
-	Rating    float64 `json:"rating"`
-	Seller    string  `json:"seller"`
-	Title     string  `json:"title"`
-	ImageData string  `json:"image_data"`
+	Pos       int    `json:"pos"`
+	Price     string `json:"price"`
+	Rating    string `json:"rating"`
+	Seller    string `json:"seller"`
+	Title     string `json:"title"`
+	ImageData string `json:"image_data"`
 }
 
 type RelatedSearches struct {

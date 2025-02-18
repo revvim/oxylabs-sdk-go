@@ -15,6 +15,7 @@ type Resp struct {
 	Job               Job       `json:"job"`
 	StatusCode        int       `json:"status_code"`
 	Status            string    `json:"status"`
+	Html              string    `json:"html"`
 }
 
 type Results struct {
